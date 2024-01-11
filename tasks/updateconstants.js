@@ -1283,7 +1283,7 @@ function findAghsAbilityValue(values) {
     }
     let orig = `%${name}%`;
     name = name.toLowerCase();
-    return values[name] ?? orig;
+    return (values && values[name]) ?? orig;
   };
 }
 
